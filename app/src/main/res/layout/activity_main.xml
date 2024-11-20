@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="40dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvPalabraModificada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/etPalabra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduce palabra"
+        android:inputType="text"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:enabled="false"
+        android:saveEnabled="false"
+        android:text="Comprobar Palabra" />
+
+    <TextView
+        android:id="@+id/tvReloj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="40dp">
+
+        <ImageView
+            android:id="@+id/ivResultado"
+            android:layout_width="match_parent"
+            android:layout_height="209dp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnJugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A JUGAR!!!" />
+
+        <TextView
+            android:id="@+id/tvPuntos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Puntuación:"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+</LinearLayout>
